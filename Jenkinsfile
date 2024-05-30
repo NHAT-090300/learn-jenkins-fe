@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Clone') {
             steps {
-                sh 'node --version'
+               git "https://github.com/NHAT-090300/learn-jenkins-fe.git"
             }
         }
     }
